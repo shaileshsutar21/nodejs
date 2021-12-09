@@ -11,10 +11,11 @@ module.exports = {
       return counter;    
     //}    
   // }
-  console.log("for loop ends...")
-  counter = 20;
+  //console.log("for loop ends...")
+  //counter = 20;
   return counter;
  },
+ 
  sleep : function sleep(ms) {
     return new Promise((resolve) => {
       setTimeout(resolve, ms);

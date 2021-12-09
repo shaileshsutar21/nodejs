@@ -1,4 +1,3 @@
-const { Console } = require('console');
 const fs = require('fs');
 
 module.exports =  {
@@ -26,7 +25,7 @@ module.exports =  {
   },
 
   writeToFileSync : () => {
-    fs.writeFileSync('test.txt', '\n Additional text', { flag: 'a+' }, err => {});
+    fs.writeFileSync('test.txt', '\n Additional text in sync', { flag: 'a+' }, err => {});
   },
 
 }

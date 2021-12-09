@@ -25,8 +25,9 @@ module.exports =  {
     var chunk;
 
     readableStream.on('readable', function() {
-
+      console.log('Stream is readable');
       while ((chunk=readableStream.read()) != null) {
+        console.log('data is appended');
         data += chunk;
       }
     });
