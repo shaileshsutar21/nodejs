@@ -11,7 +11,7 @@ router.post("/login", (req, res) => {
   } else {
     const userToken = jwt.sign(user , 'some-secret');
 
-    res.setHeader("authorization", userToken);
+    res.setHeader("Authorization", userToken);
     console.log(`Authorization header is ${userToken}`);
     res.status(200).end();
   }
